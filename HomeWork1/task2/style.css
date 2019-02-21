@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  word-wrap: break-word !important;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  width: 160px;
+  background: #000;
+}
+
+li:hover {
+  background: #ccc;
+}
+
+li:hover > a {
+  color: #000;
+}
+
+nav {
+  margin-top: 40px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+nav a {
+  text-align: center;
+  display: block;
+  padding: 15px 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav ul:not(:first-child) a {
+  text-align: left;
+}
+
+nav > ul {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: #000;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+  list-style: none;
+  display: none;
+  position: absolute;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+  display: inline-block;
+  margin-left: -80px;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+  position: relative;
+  transform: translate(160px, -57px);
+}
+
+table {
+  margin: 100px auto 0;
+  background: white;
+}
+
+thead {
+  background: #ccc;
+}
+
+thead td {
+  text-align: center;
+  height: 40px;
+  font-weight: bold;
+}
+
+tbody tr:last-child td:last-child {
+  text-align: right;
+  padding-right: 8px;
+}
+
+tbody td {
+  padding-left: 8px;
+  width: 250px;
+  height: 40px;
+}
+
+tbody tr:nth-child(even):not(:last-child) {
+  background: #eee;
+}
+
+tbody tr:last-child {
+  font-weight: bold;
+}

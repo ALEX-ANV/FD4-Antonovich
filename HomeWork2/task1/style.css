@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+#wrapper {
+  flex: 1 0 auto;
+  display: flex;
+}
+header {
+  height: 100px;
+  background-color: lightsteelblue;
+  text-align: center;
+  flex-shrink: 0;
+}
+nav {
+  background-color: yellow;
+  height: 40px;
+  text-align: center;
+  flex-shrink: 0;
+}
+#news {
+  background-color: darkslateblue;
+  width: 300px;
+  text-align: center;
+  flex-shrink: 0;
+}
+main {
+  width: 100%;
+}
+aside {
+  flex-shrink: 0;
+  background-color: orangered;
+  width: 180px;
+  text-align: center;
+}
+footer {
+  flex-shrink: 0;
+  text-align: center;
+  background-color: chartreuse;
+  height: 60px;
+}
+#checkbox + label + p {
+  display: none;
+}
+#checkbox:checked + label + p {
+  display: block;
+}

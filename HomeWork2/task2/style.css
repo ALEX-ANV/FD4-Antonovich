@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+}
+ul {
+  list-style: none;
+  margin-left: 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+a[href='#main']:before {
+  content: url('./img/main.png') ' ';
+}
+a[href='#about']:before {
+  content: url('./img/about.png') ' ';
+}
+a[href='#contacts']:before {
+  content: url('./img/contacts.png') ' ';
+}
+a[href='https://facebook.com']:before {
+  content: url('./img/facebook.png') ' ';
+}
+a[href='https://facebook.com']:after {
+  content: ' ' url('./img/link.png');
+}
+p {
+  text-indent: 20px;
+  text-align: justify;
+}
+li {
+  margin: 10px 0;
+  cursor: pointer;
+}
+nav {
+  height: 100%;
+  width: 250px;
+  flex-shrink: 0;
+  background: black;
+}
+main {
+  height: 100%;
+  margin-left: 10px;
+  flex: 1 0 auto;
+}
+article,
+article:target ~ article:last-of-type {
+  display: none;
+}
+article:target,
+article:last-of-type {
+  display: block;
+}
+main {
+  flex-shrink: 1;
+}
+@media screen and (max-width: 1000px) {
+  a {
+    line-height: 0;
+    font-size: 0;
+  }
+  a[href='https://facebook.com']:after {
+    content: '';
+  }
+  nav {
+    width: 40px;
+  }
+  ul {
+    margin-left: 12px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+    height: 40px;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  main {
+    margin: 10px;
+  }
+  h1 {
+    margin-top: 10px;
+  }
+  main p {
+    margin-top: 20px;
+  }
+}
