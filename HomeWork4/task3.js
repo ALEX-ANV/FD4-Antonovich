@@ -1,4 +1,4 @@
-'use struct';
+'use strict';
 
 /**
  *
@@ -16,6 +16,7 @@ function showWordsWithTimeOut(...inputs) {
  * @param {string} sentence
  */
 function getWords(sentence) {
+  регулярку можно.
   return `${sentence}`.split(' ').map(w => w.trim());
 }
 
