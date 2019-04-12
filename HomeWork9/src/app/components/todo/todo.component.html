@@ -1,0 +1,17 @@
+<div class="todo">
+  <form class="todo-form" (ngSubmit)="addTodo()" #todoForm="ngForm">
+    <input
+      name="messageText"
+      type="text"
+      placeholder="Title"
+      minlength="1"
+      required
+      [(ngModel)]="newTodo.title"
+    />
+    <input type="date" name="messageDate" required [(ngModel)]="date" />
+    <button type="submit" [disabled]="!todoForm.valid"></button>
+  </form>
+  <ul class="todo-items-list" (click)="itemClick($event)">
+    <app-todo-item [data]="todo" *ngFor="let todo of todoItems"></app-todo-item>
+  </ul>
+</div>
