@@ -1,0 +1,25 @@
+<div class="product-container" id="{{ countProducts }}">
+  <img src="{{ data.image }}" alt="{{ data.title }}" />
+  <div class="details">
+    <h1>{{ data.title }}</h1>
+    <p>{{ data.description }}</p>
+  </div>
+  <div class="right-block">
+    <button
+      *ngIf="countProducts"
+      class="remove-button"
+      (click)="onRemoveProduct()"
+    ></button>
+    <div class="price-block">
+      <span>Цена: {{ data.price | number: '2.2' }} р.</span>
+      <div class="price-counter">
+        <button type="button" (click)="onBuyClick()" class="add"></button>
+        <span>{{ count }}</span>
+        <button type="button" (click)="onSellClick()" class="remove"></button>
+      </div>
+      <span *ngIf="countProducts" class="price-total">
+        Всего: {{ data.price * countProducts | number: '2.2' }} р.
+      </span>
+    </div>
+  </div>
+</div>

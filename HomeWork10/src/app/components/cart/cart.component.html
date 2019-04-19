@@ -1,0 +1,5 @@
+<app-product
+  *ngFor="let item of (products | async | keyvalue); trackBy: trackByFn"
+  [data]="item.key"
+  [countProducts]="item.value"
+></app-product>

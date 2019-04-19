@@ -1,0 +1,30 @@
+[
+  {
+    "id": "7ddddaab-3dd5-5012-bfc6-ff3ccc1001d7",
+    "title": "Honor 10 4GB/128GB COL-L29A (мерцающий синий)",
+    "price": 840.0,
+    "description": "Android, экран 6.5\" IPS (1080x2340), HiSilicon Kirin 710, ОЗУ 4 ГБ, флэш-память 64 ГБ, карты памяти, камера 20 Мп, аккумулятор 3750 мАч, 2 SIM, цвет красный",
+    "image": "https://content2.onliner.by/catalog/device/header/f05ace8977f07aff539fb4421bc896b2.jpeg"
+  },
+  {
+    "id": "136a2ee6-6a28-5092-9d0d-2a25fb922b3c",
+    "title": "Xiaomi Mi 8 Lite 4GB/64GB международная версия (синий)",
+    "price": 593.0,
+    "description": "Android, экран 6.26\" IPS (1080x2280), Qualcomm Snapdragon 660 MSM8956 Plus, ОЗУ 4 ГБ, флэш-память 64 ГБ, карты памяти, камера 12 Мп, аккумулятор 3350 мАч, 2 SIM, цвет синий",
+    "image": "https://content2.onliner.by/catalog/device/header/497159732ee28be162a43af67aa678ce.jpeg"
+  },
+  {
+    "id": "6e826719-1262-5cc0-b2b1-6fca271571bc",
+    "title": "Xiaomi Redmi 6A 2GB/16GB международная версия (черный)",
+    "price": 196.0,
+    "description": "Android, экран 5.45\" IPS (720x1440), MediaTek Helio A22, ОЗУ 2 ГБ, флэш-память 16 ГБ, карты памяти, камера 13 Мп, аккумулятор 3000 мАч, 2 SIM, цвет черный",
+    "image": "https://content2.onliner.by/catalog/device/header/ba8fffa190292a726f8479500d7fba3e.jpeg"
+  },
+  {
+    "id": "fed812dd-90ef-5512-8d6d-bcc05276486c",
+    "title": "Huawei P20 Pro CLT-L29 (сумеречный)",
+    "price": 1470.0,
+    "description": "Android, экран 6.1\" OLED (1080x2240), HiSilicon Kirin 970, ОЗУ 6 ГБ, флэш-память 128 ГБ, камера 40 Мп, аккумулятор 4000 мАч, 2 SIM, цвет фиолетовый",
+    "image": "https://content2.onliner.by/catalog/device/header/e62bf283f99f7d3539eac6ab4e859d11.jpeg"
+  }
+]

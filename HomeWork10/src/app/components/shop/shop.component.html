@@ -1,0 +1,6 @@
+<div class="shop-container">
+  <app-product
+    *ngFor="let product of (products | async); trackBy: trackByFn"
+    [data]="product"
+  ></app-product>
+</div>

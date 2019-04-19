@@ -1,0 +1,26 @@
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: black;
+
+    &.active {
+      color: blue;
+    }
+
+    &.cart {
+      margin-right: 30px;
+
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+}
