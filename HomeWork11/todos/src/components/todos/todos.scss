@@ -1,0 +1,28 @@
+.todos-container {
+  width: 600px;
+  margin: 0 auto;
+
+  form {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    input {
+      background: rgba($color: yellow, $alpha: 0.1);
+
+      &[type='text'] {
+        flex: 1 1 auto;
+      }
+
+      &[type='submit'] {
+        border: 1px solid black;
+        padding: 5px;
+
+        &:hover {
+          background: rgba($color: brown, $alpha: 0.2);
+        }
+      }
+    }
+  }
+}
