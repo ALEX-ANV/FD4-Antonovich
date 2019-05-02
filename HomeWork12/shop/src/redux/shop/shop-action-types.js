@@ -1,0 +1,1 @@
+export const LOAD = "[shop] load products"

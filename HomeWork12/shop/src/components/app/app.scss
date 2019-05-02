@@ -1,0 +1,18 @@
+.App {
+  .panel {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+    nav {
+      button {
+        background: transparent;
+        border: none;
+        font-size: 16px;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+    }
+    .cartTotalCount {
+    }
+  }
+}
